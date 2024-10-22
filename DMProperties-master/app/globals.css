@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+.blue_gradient {
+    @apply bg-gradient-to-r from-blue-700 via-blue-500 to-cyan-400 bg-clip-text text-transparent;
+  }
+
+  .pink_gradient {
+    @apply bg-gradient-to-r from-red-400 via-red-300 to-red-200 bg-clip-text text-transparent;
+  }
+
+  .link-container {
+    width: 100px; /* Set a fixed width */
+    text-align: center;
+  }
+
+  .hover-text {
+    display: inline-block;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .link-container:hover .hover-text {
+    font-weight: bolder;
+    color: rgb(0, 0, 0);
+  }
+  
+  .border-gradient-blue-pink {
+    border-image: linear-gradient(to right, #4299e1, #ff00ff);
+    border-image-slice: 1;
+  }
+
+  .tnc ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.tnc ul li{
+    list-style: none;
+    padding-right:40px ;
+}
+
+.tnc ul li a{
+  color: white;
+  font-size: 1rem;
+  font-weight: bolder;
+  font-family: 'Encode Sans Condensed', sans-serif;
+}
+.tnc ul li a:hover{
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+}
